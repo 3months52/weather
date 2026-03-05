@@ -1,0 +1,310 @@
+/* 背景样式 */
+body {
+    background-color: #000000;
+}
+
+.bgi {
+    padding: 50px;
+    background-color: #131215;
+    margin: 30px 0px;
+}
+
+/* 头部区域 */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_logo {
+    display: flex;
+}
+
+.header_logo a {
+    margin-left: 10px;
+    font-size: 50px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(210, 209, 209);
+}
+
+.header_locationcard {
+    display: flex;
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.header_locationcard p {
+    margin-left: 20px;
+    color: #554cb5;
+    font-size: 30px;
+}
+
+/* 左上卡片 */
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 380px;
+    margin-top: 20px;
+    background-color: #1c1c1e;
+    color: #f9f9fa;
+    border-radius: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+/* 天气图 */
+.weapper {
+    display: flex;
+}
+
+.weapper img {
+    margin-left: 50px;
+    width: 95px;
+    height: 85px;
+}
+
+/* 温度数字显示 */
+.heading {
+    font-size: 60px;
+}
+
+/* 天气说明 */
+.body-1 {
+    margin-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #686868;
+    font-size: 20px;
+}
+
+/* 日历显示 */
+.meta-item {
+    display: flex;
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+
+.meta-item p {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+/* forecast天气卡片 */
+.forecast {
+    width: 400px;
+    height: 350px;
+    background-color: #1c1c1e;
+    color: #f9f9fa;
+    border-radius: 40px;
+    padding-top: 20px;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+.title-h2 {
+    color: #f9f9fa;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.forecast ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.forecast ul li p {
+    margin-top: 10px;
+    padding-top: 3px;
+}
+
+.icon-wrapper {
+    display: flex;
+}
+
+.title-2 {
+    line-height: 24px;
+    height: 24px;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.forecast .label-1 {
+    padding-right: 24px;
+    padding-top: 5px;
+    font-size: 15px;
+    color: rgb(139, 139, 139);
+}
+
+
+.highlight-card {
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    height: 530px;
+    margin-top: 20px;
+    background-color: #1c1c1e;
+    color: #f9f9fa;
+    border-radius: 40px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.air-card {
+
+    width: 590px;
+    height: 200px;
+    background-color: #1a191c;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+
+.title-3 {
+    color: rgb(211, 210, 210);
+    margin-left: 24px;
+}
+
+.air-card-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quality-level {
+    width: 90px;
+    height: 27px;
+    border-radius: 30px;
+    background-color: #39c5bb;
+    line-height: 27px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.air-card-bottom-list {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.air-card-bottom ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.air-card-bottom ul li h4 {
+    font-size: 11px;
+    text-align: center;
+    color: rgb(139, 139, 139);
+}
+
+.air-card-bottom ul li h2 {
+    font-size: 30px;
+    color: rgb(210, 209, 209);
+}
+
+.highlights-list {
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.Sun-card {
+    width: 590px;
+    height: 200px;
+    background-color: #1a191c;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-top: 20px;
+    margin-right: 40px;
+}
+
+.sun-card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sun-card-bottom ul {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+
+.sun-card-bottom ul li {
+    margin: 20px;
+}
+
+.sun-card-bottom ul li h4 {
+    font-size: 11px;
+    color: rgb(139, 139, 139);
+}
+
+.sun-card-bottom ul li h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(210, 209, 209);
+}
+
+.other-card {
+    width: 270px;
+    height: 180px;
+    margin-right: 40px;
+    border-radius: 20px;
+    background-color: #1a191c;
+    margin-top: 20px;
+}
+
+.other-card h4 {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(139, 139, 139);
+}
+
+.other-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-bottom img {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.other-bottom h2 {
+    margin-right: 20px;
+    margin-top: 35px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.all-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.today-card {
+    width: 130px;
+    height: 155px;
+    background-color: #1c1c1e;
+    margin-top: 25px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(210, 209, 209);
+    padding-top: 15px;
+}
+
+.today-card img {
+    margin-bottom: 8px;
+    margin-top: 14px;
+}
+
+.today ul {
+    display: flex;
+    justify-content: space-between;
+}

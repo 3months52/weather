@@ -1,0 +1,59 @@
+.quality-excellent {
+    width: 90px;
+    height: 27px;
+    border-radius: 30px;
+    background-color: #39c5bb;
+    line-height: 27px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.quality-good {
+    width: 90px;
+    height: 27px;
+    border-radius: 30px;
+    background-color: #39c6bd;
+    line-height: 27px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.quality-light {
+    width: 90px;
+    height: 27px;
+    border-radius: 30px;
+    background-color: #288982;
+    line-height: 27px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.quality-moderate {
+    width: 90px;
+    height: 27px;
+    border-radius: 30px;
+    background-color: #13423f;
+    line-height: 27px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.quality-heavy {
+    width: 90px;
+    height: 27px;
+    border-radius: 30px;
+    background-color: #c53986;
+    line-height: 27px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.quality-severe {
+    width: 90px;
+    height: 27px;
+    border-radius: 30px;
+    background-color: #000000;
+    line-height: 27px;
+    text-align: center;
+    margin-right: 20px;
+}

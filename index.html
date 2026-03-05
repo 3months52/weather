@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/base.css">
+    <!-- 注意先后顺序，先清除后设置 -->
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/air-quality.css">
+    <link rel="stylesheet" href="./CSS/location.css">
+    <link rel="stylesheet" href="./CSS/search.css">
+</head>
+
+<body>
+    <div class="bgi">
+        <!-- 头部区域 -->
+        <div class="header">
+            <!-- logo区域 -->
+            <div class="header_logo">
+                <img src="./img/多云.png" alt="" width="75" height="75">
+                <a href="">weather</a>
+            </div>
+            <!-- search区域 -->
+            <!-- From Uiverse.io by themrsami -->
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search..." />
+                    <div class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="glow btn"></div>
+            </div>
+            <!-- 城市定位区域 -->
+            <a href="#" class="header_locationcard">
+                <!-- From Uiverse.io by bociKond -->
+                <div class="loader"></div>
+                <p>Location</p>
+            </a>
+        </div>
+
+        <!-- 天气卡片区-->
+        <div class="all-card">
+            <!-- 当前天气 -->
+            <!-- 左方天气 -->
+            <div class="content-left">
+                <div class="current-weather">
+                    <h2 class="left_top">NOW</h2>
+                    <div class="weapper">
+                        <p class="heading">30&deg;<sup>c</sup></p>
+                        <img src="./img/浓云.png" alt="Cloud" width="64" height="70" class="current_weather_img">
+                    </div>
+
+                    <p class="body-1">Overcast Clouds</p>
+
+                    <ul class="meta-list">
+
+                        <li class="meta-item">
+                            <span class="m-icon"><img src="./img/日历.png" alt="calendar_today" width="20"></span>
+                            <p class="title-3 meta-text calendar">Thursday 16, Feb</p>
+                        </li>
+                        <li class="meta-item">
+                            <span class="m-icon"><img src="./img/位置 (1).png" alt="position" width="20"></span>
+                            <p class="title-3 meta-text position-left">Lodon</p>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- 5天天气 -->
+                <h2 class="title-h2">5 Days Forecast</h2>
+                <div class="forecast">
+                    <div class="forecast-card">
+                        <ul>
+                            <li class="card-item">
+                                <div class="icon-wrapper">
+                                    <img src="./img/晴天(夜晚).png" alt="" width="50" height="50">
+                                    <span>
+                                        <p class="title-2 day_1">25&deg;</p>
+                                    </span>
+
+                                </div>
+
+                                <p class="label-1 date_1">17 Feb</p>
+
+                                <p class="label-1">Friday</p>
+
+                            </li>
+                            <li class="card-item">
+                                <div class="icon-wrapper">
+                                    <img src="./img/晴天(夜晚).png" alt="" width="50" height="50">
+                                    <span>
+                                        <p class="title-2 day_2">25&deg;</p>
+                                    </span>
+
+                                </div>
+
+                                <p class="label-1 date_2">17 Feb</p>
+
+                                <p class="label-1">Friday</p>
+
+                            </li>
+                            <li class="card-item">
+                                <div class="icon-wrapper">
+                                    <img src="./img/晴天(夜晚).png" alt="" width="50" height="50">
+                                    <span>
+                                        <p class="title-2 day_3">25&deg;</p>
+                                    </span>
+
+                                </div>
+
+                                <p class="label-1 date_3">17 Feb</p>
+
+                                <p class="label-1">Friday</p>
+
+                            </li>
+                            <li class="card-item">
+                                <div class="icon-wrapper">
+                                    <img src="./img/晴天(夜晚).png" alt="" width="50" height="50">
+                                    <span>
+                                        <p class="title-2 day_4">25&deg;</p>
+                                    </span>
+
+                                </div>
+
+                                <p class="label-1 date_4">17 Feb</p>
+
+                                <p class="label-1">Friday</p>
+
+                            </li>
+                            <li class="card-item">
+                                <div class="icon-wrapper">
+                                    <img src="./img/晴天(夜晚).png" alt="" width="50" height="50">
+                                    <span>
+                                        <p class="title-2 day_5">25&deg;</p>
+                                    </span>
+
+                                </div>
+
+                                <p class="label-1 date_5">17 Feb</p>
+
+                                <p class="label-1">Friday</p>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 右方highlights区域 -->
+            <div class="content-right">
+                <div class="highlight-card">
+                    <!-- 文字 -->
+                    <h2 class="title-h2">Todays Highlights</h2>
+                    <div class="highlights-list">
+                        <!-- 空气质量 -->
+                        <div class="air-card">
+                            <div class="air-card-top">
+                                <h3 class=" title-3">Air Quality Index</h3>
+                                <h2 class="title-3">μg/m³</h2>
+                                <div class="quality-level">高</div>
+                            </div>
+                            <div class="air-card-bottom">
+                                <div class="air-card-bottom-list">
+
+                                    <ul>
+                                        <li>
+                                            <img src="./img/风.png" alt="" width="60" height="60">
+                                        </li>
+                                        <li>
+                                            <h4>PM2.5</h4>
+                                            <h2 class="pm25-value">3.90</h2>
+                                        </li>
+                                        <li>
+                                            <h4>CO2</h4>
+                                            <h2 class="co2-value">3.90</h2>
+                                        </li>
+                                        <li>
+                                            <h4>NO2</h4>
+                                            <h2 class="no2-value">3.90</h2>
+                                        </li>
+                                        <li>
+                                            <h4>O3</h4>
+                                            <h2 class="o3-value">3.90</h2>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- sun卡片 -->
+                        <div class="Sun-card">
+                            <div class="sun-card-top">
+                                <h3 class="title-3">Sunrise & Sunset</h3>
+                            </div>
+                            <div class="sun-card-bottom">
+                                <ul>
+                                    <li>
+                                        <img src="./img/晴天(1).png" alt="" width="60" height="60">
+                                    </li>
+                                    <li>
+                                        <h4>Sunrise</h4>
+                                        <h2 class="sunrise">5:20 AM</h2>
+                                    </li>
+                                    <li>
+                                        <img src="./img/晴天(夜晚).png" alt="" width="60" height="60">
+                                    </li>
+                                    <li>
+                                        <h4>Sunset</h4>
+                                        <h2 class="sunset">18:20 PM</h2>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <!-- 湿度卡片以及剩余卡片 -->
+                        <div class="other-card">
+                            <h4>Humidity</h4>
+                            <div class="other-bottom">
+                                <img src="./img/湿度.png" alt="" width="60" height="60">
+                                <h2 class="Humidity">82%</h2>
+                            </div>
+                        </div>
+                        <!-- 湿度卡片以及剩余卡片 -->
+                        <div class="other-card">
+                            <h4>Pressure</h4>
+                            <div class="other-bottom">
+                                <img src="./img/海浪.png" alt="" width="55" height="60">
+                                <h2 class="pressure">1025hPa</h2>
+                            </div>
+                        </div>
+                        <!-- 湿度卡片以及剩余卡片 -->
+                        <div class="other-card">
+                            <h4>Visibility</h4>
+                            <div class="other-bottom ">
+                                <img src="./img/能见度 (1).png" alt="" width="62" height="62">
+                                <h2 class="visibility">10km</h2>
+                            </div>
+                        </div>
+                        <!-- 湿度卡片以及剩余卡片 -->
+                        <div class="other-card">
+                            <h4>Feels Like</h4>
+                            <div class="other-bottom">
+                                <img src="./img/温度计.png" alt="" width="60" height="60">
+                                <h2 class="feels_like">2&deg;</h2>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- 今日天气 -->
+                <h2 class="title-h2">Today at</h2>
+                <div class="today">
+                    <ul>
+                        <li class="today-card">
+                            <h4>0AM</h4>
+                            <img src="./img/小雨.png" alt="" width="60" height="60">
+                            <h4 class="tem_0">7&deg; </h4>
+                        </li>
+                        <li class=" today-card">
+                            <h4>3AM</h4>
+                            <img src="./img/小雨.png" alt="" width="60" height="60">
+                            <h4 class="tem_3">7&deg;</h4>
+                        </li>
+                        <li class="today-card">
+                            <h4>6AM</h4>
+                            <img src="./img/小雨.png" alt="" width="60" height="60">
+                            <h4 class="tem_6">7&deg;</h4>
+                        </li>
+                        <li class="today-card">
+                            <h4>9AM</h4>
+                            <img src="./img/小雨.png" alt="" width="60" height="60">
+                            <h4 class="tem_9">7&deg;</h4>
+                        </li>
+                        <li class="today-card">
+                            <h4>12PM</h4>
+                            <img src="./img/小雨.png" alt="" width="60" height="60">
+                            <h4 class="tem_12">7&deg;</h4>
+                        </li>
+                        <li class="today-card">
+                            <h4>15PM</h4>
+                            <img src="./img/小雨.png" alt="" width="60" height="60">
+                            <h4 class="tem_15">7&deg;</h4>
+                        </li>
+                        <li class="today-card">
+                            <h4>18PM</h4>
+                            <img src="./img/小雨.png" alt="" width="60" height="60">
+                            <h4 class="tem_18">7&deg;</h4>
+                        </li>
+                        <li class="today-card">
+                            <h4>21PM</h4>
+                            <img src="./img/小雨.png" alt="" width="60" height="60">
+                            <h4 class="tem_21">7&deg;</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        // 天气代码
+        const weatherImages = {
+            "0": "晴天(1).png",
+            "1": "晴天(夜晚).png",
+            "2": "阴.png",
+            "3": "小雨.png",
+            "4": "多云.png",
+            "5": "晴间多云.png",
+            "6": "晴间多云.png",
+            "7": "晴间多云.png",
+            "8": "晴间多云.png",
+            "9": "阴.png",
+            "10": "阵雨.png",
+            "11": "雷阵雨.png",
+            "12": "雷阵雨.png",
+            "13": "小雨.png",
+            "14": "小雨.png",
+            "15": "大雨.png",
+            "16": "暴雨.png",
+            "17": "暴雨.png",
+            "default": "默认.png"
+        };
+
+
+        let data = {
+            //基础天气
+            key: 'Srx5siFFs-YfIqsRi',
+            city: '北京',
+            weather: '',//储存数据
+            air: '',
+            hourly: [],
+            daily: [],
+            sun: []
+        }
+
+        //基础天气
+        function getWeatherData() {
+            $(function () {
+                $.ajax({
+                    type: 'GET',
+                    url: 'http://api.seniverse.com/v3/weather/now.json',
+                    data: {
+                        key: data.key,
+                        location: data.city,
+                        language: 'zh-Hans',
+                        unit: 'c'
+                    },
+                    dataType: 'json',
+                    success: function (res) {
+                        data.weather = res.results[0].now;
+                        data.location = res.results[0].location
+                        data.time = res.results[0].last_update
+                        console.log(data.weather)
+                        console.log(data.location)
+                        console.log(res)
+                        renderWeather();
+                    }
+                })
+            })
+        }
+
+        //天气质量
+        function getAirData() {
+            $(function () {
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://api.seniverse.com/v3/air/now.json',
+                    data: {
+                        key: data.key,
+                        location: data.city,
+                        language: 'zh-Hans',
+                        scope: 'city'
+                    },
+                    dataType: 'json',
+                    success: function (res) {
+                        console.log('空气质量数据:', res);
+                        data.air = res.results[0];
+                        renderAir();
+                    },
+                });
+            });
+        }
+
+        //每小时天气
+        function getHourlyTemperatures() {
+            $.ajax({
+                type: 'GET',
+                url: 'https://api.seniverse.com/v3/weather/hourly.json',
+                data: {
+                    key: data.key,
+                    location: data.city,
+                    language: 'zh-Hans',
+                    unit: 'c',
+                    start: 0,
+                    hours: 24
+                },
+                dataType: 'json',
+                success: function (res) {
+                    const hourlyList = res.results[0].hourly;   // 24个预报对象
+                    data.hourlyTemps = hourlyList.map(item => item.temperature);
+                    data.hourlyCodes = hourlyList.map(item => item.code); // 保存天气代码
+                    console.log('24小时温度(°C):', data.hourlyTemps);
+                    console.log('24小时天气代码:', data.hourlyCodes);
+                    renderHourly();
+                },
+            });
+        }
+
+        //5天预报
+        function getDailyData() {
+            $.ajax({
+                type: 'GET',
+                url: 'https://api.seniverse.com/v3/weather/daily.json',
+                data: {
+                    key: data.key,
+                    location: data.city,
+                    language: 'zh-Hans',
+                    unit: 'c',
+                    start: 1,
+                    days: 5
+                },
+                dataType: 'json',
+                success: function (res) {
+                    data.daily = res.results[0].daily;
+                    console.log('未来5天每日预报:', data.daily);
+                    renderDaily();
+                },
+            });
+        }
+
+        //日出日落时间
+        function getSunData() {
+            $.ajax({
+                type: 'GET',
+                url: 'https://api.seniverse.com/v3/geo/sun.json',
+                data: {
+                    key: data.key,
+                    location: data.city,
+                    language: 'zh-Hans',
+                    start: 0,
+                    days: 7
+                },
+                dataType: 'json',
+                success: function (res) {
+                    data.sun = res.results[0].sun;
+                    console.log('未来7天日出日落:', data.sun);
+                    renderSunData();
+                },
+                error: function (xhr, status, error) {
+                    console.error('日出日落API调用失败:', error);
+                }
+            });
+        }
+
+        //基础天气
+        function renderWeather() {
+            let temperature = data.weather.temperature + '°' + 'C';
+            let text = data.weather.text;
+            let path = data.location.path;
+            let time = data.time
+            let humidity = data.weather.humidity + '%'
+            let pressure = data.weather.pressure + 'hpa'
+            let visibility = data.weather.visibility + 'Km'
+            let feels_like = data.weather.feels_like + '°' + 'C'
+            $('.heading').text(temperature)
+            $('.body-1').text(text)
+            $('.position-left').text(path)
+            $('.calendar').text(time)
+            $('.Humidity').text(humidity)
+            $('.pressure').text(pressure)
+            $('.visibility').text(visibility)
+            $('.feels_like').text(feels_like)
+            // $('.').text()
+            console.log('天气代码:', data.weather.code);
+
+            // 更新图片(该部分为AI补充)
+            const code = String(data.weather.code);
+            const imgFile = weatherImages[code] || weatherImages["default"];
+            const imgPath = `./img/${imgFile}`;
+            console.log('设置图片:', imgPath);  // 检查图片路径是否正确
+            $('.current_weather_img').attr('src', imgPath).on('error', function () {
+                console.error('图片加载失败，使用默认图片');
+                $(this).attr('src', './img/默认.png');
+            });
+        }
+
+        //空气质量
+        function renderAir() {
+
+            let cityAir = data.air.air.city;
+            let location = data.air.location;
+
+            $('.position-left').text(location.path);
+            $('.aqi-value').text(cityAir.aqi || 'N/A');
+            $('.aqi-quality').text(cityAir.quality || 'N/A');
+            $('.aqi-pollutant').text(cityAir.primary_pollutant || 'N/A');
+            $('.pm25-value').text(cityAir.pm25 ? cityAir.pm25 : 'N/A');
+            $('.pm10-value').text(cityAir.pm10 ? cityAir.pm10 : 'N/A');
+            $('.so2-value').text(cityAir.so2 ? cityAir.so2 : 'N/A');
+            $('.no2-value').text(cityAir.no2 ? cityAir.no2 : 'N/A');
+            $('.co-value').text(cityAir.co ? cityAir.co : 'N/A');
+            $('.o3-value').text(cityAir.o3 ? cityAir.o3 : 'N/A');
+            $('.quality-level').text(cityAir.quality);
+            switch (cityAir.quality) {
+                case '优':
+                    $('.quality-level').addClass('quality-excellent');
+                    break;
+                case '良':
+                    $('.quality-level').addClass('quality-good');
+                    break;
+                case '轻度污染':
+                    $('.quality-level').addClass('quality-light');
+                    break;
+                case '中度污染':
+                    $('.quality-level').addClass('quality-moderate');
+                    break;
+                case '重度污染':
+                    $('.quality-level').addClass('quality-heavy');
+                    break;
+                case '严重污染':
+                    $('.quality-level').addClass('quality-severe');
+                    break;
+            }
+            console.log('空气质量数据');
+        }
+
+        //小时天气
+        function renderHourly() {
+            let tem_0 = data.hourlyTemps[0] + '°';
+            let tem_3 = data.hourlyTemps[3] + '°';
+            let tem_6 = data.hourlyTemps[6] + '°';
+            let tem_9 = data.hourlyTemps[9] + '°';
+            let tem_12 = data.hourlyTemps[12] + '°';
+            let tem_15 = data.hourlyTemps[15] + '°';
+            let tem_18 = data.hourlyTemps[18] + '°';
+            let tem_21 = data.hourlyTemps[21] + '°';
+            $('.tem_0').text(tem_0)
+            $('.tem_3').text(tem_3)
+            $('.tem_6').text(tem_6)
+            $('.tem_9').text(tem_9)
+            $('.tem_12').text(tem_12)
+            $('.tem_15').text(tem_15)
+            $('.tem_18').text(tem_18)
+            $('.tem_21').text(tem_21)
+
+            //下面为ai思路补充
+            if (!data.hourlyCodes || data.hourlyCodes.length < 22) return;
+
+            // 定义一个数组，映射小时到索引（与温度取值一致）
+            const hourIndices = [0, 3, 6, 9, 12, 15, 18, 21];
+            hourIndices.forEach(idx => {
+                const code = String(data.hourlyCodes[idx]); // 获取对应索引的天气代码
+                const hour = idx;
+                const imgFile = weatherImages[code] || weatherImages["default"];
+                const imgPath = `./img/${imgFile}`;
+
+                // 通过温度元素 .tem_${hour} 定位
+                const $card = $(`.tem_${hour}`).closest('.today-card');
+                if ($card.length) {
+                    $card.find('img').attr('src', imgPath)
+                        .on('error', function () {
+                            console.log(`今日${hour}点图片加载失败，使用默认`);
+                            $(this).attr('src', './img/默认.png');
+                        });
+                }
+            });
+        }
+
+        //5天预报
+        function renderDaily() {
+            let day_1 = data.daily[0].code_day + '°' + 'C';
+            let day_2 = data.daily[1].code_day + '°' + 'C';
+            let day_3 = data.daily[2].code_day + '°' + 'C';
+            let day_4 = data.daily[3].code_day + '°' + 'C';
+            let day_5 = data.daily[4].code_day + '°' + 'C';
+            let date_1 = data.daily[0].date;
+            let date_2 = data.daily[1].date;
+            let date_3 = data.daily[2].date;
+            let date_4 = data.daily[3].date;
+            let date_5 = data.daily[4].date;
+            $('.day_1').text(day_1)
+            $('.day_2').text(day_2)
+            $('.day_3').text(day_3)
+            $('.day_4').text(day_4)
+            $('.day_5').text(day_5)
+            $('.date_1').text(date_1)
+            $('.date_2').text(date_2)
+            $('.date_3').text(date_3)
+            $('.date_4').text(date_4)
+            $('.date_5').text(date_5)
+
+            for (let i = 0; i < 5; i++) {
+                if (data.daily[i]) {
+                    const code = String(data.daily[i].code_day);
+                    const imgFile = weatherImages[code] || weatherImages["default"];
+                    const imgPath = `./img/${imgFile}`;
+
+                    // 通过 day_i 所在的卡片找到其中的图片
+                    $('.day_' + (i + 1)).closest('.card-item').find('img')
+                        .attr('src', imgPath)
+                        .on('error', function () {
+                            console.log('图片加载失败，使用默认图片');
+                            $(this).attr('src', './img/默认.png');
+                        });
+                }
+            }
+        }
+
+        //sunrise
+        function renderSunData() {
+            let sunrise = data.sun[0].sunrise + 'AM';
+            let sunset = data.sun[0].sunset + 'PM';
+            $('.sunrise').text(sunrise)
+            $('.sunset').text(sunset)
+        }
+
+        //切换城市功能
+        function changeCity(newCity) {
+            data.city = newCity;
+            getWeatherData();
+            getAirData();
+            getHourlyTemperatures();
+            getDailyData();
+            getSunData();
+        }
+
+        // 页面加载初始化
+        $(function () {
+            getWeatherData();
+            getAirData();
+            getHourlyTemperatures();
+            getDailyData();
+            getSunData();
+
+            // 搜索事件
+            $('.search-icon').on('click', performSearch);
+            $('.search-input').on('keypress', function (e) {
+                if (e.which === 13) performSearch();
+            });
+        });
+
+        function performSearch() {
+            var newCity = $('.search-input').val().trim();
+            if (newCity) {
+                changeCity(newCity);
+            } else {
+                alert('请输入城市名');
+            }
+        }
+
+        //刷新
+        setInterval(function () {
+            getWeatherData();
+            getAirData();
+            getHourlyTemperatures();
+            getDailyData();
+            getSunData();
+        }, 6000000)
+
+
+    </script>
+</body>
+
+</html>
