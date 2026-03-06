@@ -50,3 +50,10 @@
 
 ·增加更多天气指标
 ·你可以从 API 返回的数据中提取更多字段（如气压、能见度、日出日落时间），并在页面中添加对应的元素。
+
+# 联系方式
+作者：3months52
+
+邮箱：huchengsi666@outlook.com
+
+项目链接：https://github.com/3months52/weather
