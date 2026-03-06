@@ -1,0 +1,46 @@
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 编辑器/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# 临时文件
+*.log
+*.tmp
+*.temp
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+# 依赖目录（如果以后使用 npm）
+node_modules/
+jspm_packages/
+
+# 环境变量文件（存放 API 密钥等敏感信息）
+.env
+.env.local
+.env.*.local
+
+# 构建产物（如果以后有打包）
+dist/
+build/
+*.js.map
+*.css.map
+
+# 测试覆盖率报告
+coverage/
+
+# 其他
+*.bak
